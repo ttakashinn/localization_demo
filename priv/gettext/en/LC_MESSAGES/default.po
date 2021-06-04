@@ -30,3 +30,13 @@ msgstr ""
 #: lib/localization_demo_web/templates/layout/app.html.eex:16
 msgid "Get Started"
 msgstr ""
+
+#, elixir-format
+#: lib/localization_demo_web/templates/layout/app.html.eex:19
+msgid "English"
+msgstr ""
+
+#, elixir-format
+#: lib/localization_demo_web/templates/layout/app.html.eex:20
+msgid "Vietnamese"
+msgstr ""
