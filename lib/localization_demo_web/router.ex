@@ -7,6 +7,12 @@ defmodule LocalizationDemoWeb.Router do
     plug :fetch_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug(SetLocale,
+      gettext: LocalizationDemoWeb.Gettext,
+      default_locale: "vi",
+      cookie_key: "_localization_demo_locale",
+      additional_locales: []
+    )
   end
 
   pipeline :api do
@@ -16,6 +22,11 @@ defmodule LocalizationDemoWeb.Router do
   scope "/", LocalizationDemoWeb do
     pipe_through :browser
 
+    get "/", PageController, :dummy
+  end
+
+  scope "/:locale", LocalizationDemoWeb do
+    pipe_through :browser
     get "/", PageController, :index
   end
 
