@@ -18,6 +18,8 @@ config :localization_demo, LocalizationDemoWeb.Endpoint,
   pubsub_server: LocalizationDemo.PubSub,
   live_view: [signing_salt: "9dsK9SeO"]
 
+config :localization_demo, LocalizationDemoWeb.Gettext, default_locale: "vi"
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",

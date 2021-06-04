@@ -14,4 +14,19 @@ msgstr ""
 #, elixir-format
 #: lib/localization_demo_web/templates/page/index.html.eex:2
 msgid "Welcome to %{name}!"
-msgstr ""
+msgstr "Chào mừng tới %{name}"
+
+#, elixir-format
+#: lib/localization_demo_web/templates/page/index.html.eex:3
+msgid "Peace of mind from prototype to production"
+msgstr "Yên tâm từ nguyên mẫu tới thành phẩm"
+
+#, elixir-format
+#: lib/localization_demo_web/templates/layout/app.html.eex:18
+msgid "LiveDashboard"
+msgstr "Bảng điều khiển"
+
+#, elixir-format
+#: lib/localization_demo_web/templates/layout/app.html.eex:16
+msgid "Get Started"
+msgstr "Bắt đầu!"

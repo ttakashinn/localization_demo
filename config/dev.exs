@@ -3,7 +3,7 @@ use Mix.Config
 # Configure your database
 config :localization_demo, LocalizationDemo.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "admin@12345",
   database: "localization_demo_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
